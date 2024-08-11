@@ -1,0 +1,180 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24,
+}
+
+.icons .material-symbols-outlined {
+    font-size: 22px;
+    border: 0.1px solid #f0f0f0;
+    background-color: #007bff;
+    padding: 9px;
+    border-radius: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.imperium {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imperium .man {
+    max-width: 660px;
+    margin: 0 auto;
+}
+
+.imperium .man span {
+    border: 0.1px solid #e0e0e0;
+    padding: 5px 7px;
+    background-color: #ffc107;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: x-small;
+    color: #856404;
+}
+
+.imperium .man h1 {
+    font-size: 32px;
+    color: #343a40;
+}
+
+.imperium .man p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #6c757d;
+    width: 80%;
+}
+
+.steel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    font-style: bold;
+}
+
+.heart {
+    padding: 15px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 700;
+}
+
+.kill {
+    padding: 15px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero .contact-item {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.hero .contact-item .icons {
+    max-width: 200px;
+}
+
+.form {
+    background-color: #f4f4f4;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.form label {
+    display: flex;
+    margin-bottom: auto;
+    color: #333;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: auto;
+    padding: 2px;
+    border: 1px solid #213257;
+    border-radius: auto;
+}
+
+input[type=submit] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 29px;
+    width: 100%;
+}
+
+@media screen and (max-width: 460px) {
+    .hero .contact-item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .form {
+        margin: 0 10px;
+    }
+    .imperium .man h1 {
+        text-align: center;
+    }
+}
